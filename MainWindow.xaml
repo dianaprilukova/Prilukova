@@ -1,0 +1,33 @@
+﻿<Window x:Class="Prilukova.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prilukova"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="btHran" Content="Узнать объем хранилища" Click="btHran_Click"></Button>
+            <TextBlock Text="Объем"></TextBlock>
+            <TextBox x:Name="tbObem" Text="Не реализовано"></TextBox>
+            <TextBlock Text="Плотность"></TextBlock>
+            <TextBox x:Name="tbPlotnost" Text="Не реализовано"></TextBox>
+            <Button x:Name="btMassa" Content="Вычислить массу" Click="btMassa_Click"></Button>
+
+            <TextBlock Text="Добавить в хранилище топливо:"></TextBlock>
+            <TextBox x:Name="tbDobav"></TextBox>
+            <Button x:Name="btDobav" Content="Добавить топливо" Click="btDobav_Click"></Button>
+
+            <TextBlock Text="Извлечь из хранилища топливо:"></TextBlock>
+            <TextBox x:Name="tbIzv"></TextBox>
+            <Button x:Name="btIzv" Content="Извлечь топливо" Click="btIzv_Click"></Button>
+            
+            <TextBlock Text="Заправить транспорт топливом:"></TextBlock>
+            <TextBox x:Name="tbZapravka"></TextBox>
+            <Button x:Name="btZapravka" Content="Заправить" Click="btZapravka_Click"></Button>
+        </StackPanel>
+        
+
+    </Grid>
+</Window>
